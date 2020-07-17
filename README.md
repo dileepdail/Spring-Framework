@@ -1,7 +1,7 @@
 # Spring-Framework
 Sample Spring Framework with all basic concepts
 
-Credit: "This project is inspired by spring Framework for Beginners with Spring Boot by Naveen Reddy"
+Credit: This project is inspired by "spring Framework for Beginners with Spring Boot by Naveen Reddy"
 
 
 #Installation and setup of the project
@@ -25,5 +25,19 @@ Create new Spring Starter Project
 
 instead of creating the object of the class we can inject the new instance using getBean method of ApplicationContext class  
 Eg.   
-ApplicationContext appContext =  SpringApplication.run(DemoApplication.class, args);  
-Student st = appContext.getBean(Student.class); //Injecting new instance  
+    ApplicationContext appContext =  SpringApplication.run(DemoApplication.class, args);  
+    Student st = appContext.getBean(Student.class); //Injecting new instance  
+Add @Component before your class to Spring to know it is reponsible for instantiation  
+Add @Autowired before object to auto object creation
+E.g.  
+
+    @Component
+    public class Student {
+
+      @Autowired
+      Laptop lap;
+
+      public void study(){
+        lap.compile();
+      }
+    }
