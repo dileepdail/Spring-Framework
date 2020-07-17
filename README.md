@@ -6,7 +6,7 @@ Sample Spring Framework with all basic concepts
 
 ## Installation and setup of the project
 
-1. Install STS(Spring Tool Suite)  
+1. Install Spring Tools
 -> https://spring.io/tools
 
 2. Create a maven project  
