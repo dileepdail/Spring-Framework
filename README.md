@@ -10,14 +10,7 @@ Sample Spring Framework with all basic concepts
 -> select maven-archetype-quickstart
 
 4. Open pom.xml file
--> Add ependencies
-{
-    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-    <dependency>
-        <groupId>org.springframework</groupId>
-        <artifactId>spring-context</artifactId>
-        <version>5.2.6.RELEASE</version>
-    </dependency>
-}
+-> Add spring-context dependency from maven repo
+https://mvnrepository.com/artifact/org.springframework/spring-context/5.2.6.RELEASE
 
 It will add all JAR files related to Spring in the Maven Dependencies Folder
